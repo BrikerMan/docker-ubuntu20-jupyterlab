@@ -1,6 +1,6 @@
-ARG PTYHON_VERSION
+ARG PYTHON_VERSION
 
-FROM brikerman/ubuntu20_python3:$PTYHON_VERSION
+FROM brikerman/ubuntu20_python3:$PYTHON_VERSION
 
 WORKDIR /code
 
