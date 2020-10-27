@@ -1,12 +1,10 @@
 ARG PTYHON_VERSION
 
-FROM brikerman/ubuntu20.04_python3:$PTYHON_VERSION
+FROM brikerman/ubuntu20_python3:$PTYHON_VERSION
 
 WORKDIR /code
 
 RUN pip install jupyter -U && pip install jupyterlab
-RUN echo $PYTHON_VERSION
-RUN env
 
 EXPOSE 8888
 

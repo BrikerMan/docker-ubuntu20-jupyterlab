@@ -1,13 +1,4 @@
 #!/bin/bash
 
-PTYHON_VERSION=$DOCKER_TAG
-
-if [ $DOCKER_TAG == "latest" ]
-then
-  PTYHON_VERSION="3.8.2"
-  echo "Start build ${DOCKER_TAG} tag with Python: ${PTYHON_VERSION}"
-else
-  echo "Start build ${DOCKER_TAG} tag with Python: ${PTYHON_VERSION}"
-fi
-
-docker build . --build-arg PTYHON_VERSION=${PTYHON_VERSION} -t ${IMAGE_NAME}
+echo "Start build python image wiht tag: ${DOCKER_TAG}"
+docker build . --build-arg PYTHON_VERSION="$DOCKER_TAG" -t ${IMAGE_NAME}
