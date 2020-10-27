@@ -1,6 +1,6 @@
-ARG PYTHON_VERSION
+ARG DOCKER_TAG
 
-FROM brikerman/ubuntu20.04_python3:$PYTHON_VERSION
+FROM brikerman/ubuntu20.04_python3:$DOCKER_TAG
 
 WORKDIR /code
 
