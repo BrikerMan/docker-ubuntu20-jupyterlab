@@ -1,0 +1,10 @@
+#!/bin/bash
+
+PTYHON_VERSION=$DOCKER_TAG
+
+if [ $DOCKER_TAG == "latest" ]
+then
+  docker build . --build-arg NODE_VERSION="3.8.0" -t ${IMAGE_NAME}
+else
+  docker build . --build-arg NODE_VERSION=${PTYHON_VERSION} -t ${IMAGE_NAME}
+fi
