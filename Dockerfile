@@ -1,0 +1,5 @@
+ARG PYTHON_VERSION
+
+FROM brikerman/ubuntu20.04_python3:$PYTHON_VERSION
+
+RUN echo $PYTHON_VERSION
