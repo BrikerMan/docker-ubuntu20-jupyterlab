@@ -1,1 +1,1 @@
-# docker-ubuntu20-jupyterlab
+# Jupyter Lab on Ubuntu
